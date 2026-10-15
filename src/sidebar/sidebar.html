@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>SideNote</title>
+    <link rel="stylesheet" href="sidebar.css">
+</head>
+<body>
+    <div id="sidebar-panel">
+        <!-- 顶部标题栏 -->
+        <div id="header">
+            <span>📝 SideNote</span>
+            <span id="close-btn">✕</span>
+        </div>
+
+        <!-- 主体：左右分栏 -->
+        <div id="main-body">
+            <!-- 左侧：笔记本列表 -->
+            <div id="notebook-sidebar">
+                <div id="list-header">
+                    <span>📚 笔记本</span>
+                    <button id="add-notebook-btn" title="新建笔记本">＋</button>
+                </div>
+                <ul id="notebook-list">
+                    <!-- 列表项会由 JavaScript 动态生成 -->
+                    <li class="empty-hint">点击 “＋” 创建第一个笔记本</li>
+                </ul>
+            </div>
+
+            <!-- 右侧：内容编辑区（占位） -->
+            <div id="content-area">
+                <div class="placeholder-text">
+                    <p>📖 选择一个笔记本开始记录</p>
+                    <p style="font-size: 13px; color: #94a3b8;">摘录和笔记将显示在这里</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 引入存储模块（注意顺序：先 db，再 notebookStore） -->
+    <script src="../storage/db.js"></script>
+    <script src="../storage/notebookStore.js"></script>
+    <!-- 引入侧边栏逻辑 -->
+    <script src="sidebar.js"></script>
+</body>
+</html>

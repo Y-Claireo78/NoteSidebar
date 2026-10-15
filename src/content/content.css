@@ -1,0 +1,15 @@
+/* 一个简单的测试提示框，后续会删掉 */
+#side-note-test-tip {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: #4A90D9;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  z-index: 999999;
+  pointer-events: none;
+}
