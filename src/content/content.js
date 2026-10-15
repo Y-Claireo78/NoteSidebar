@@ -99,4 +99,4 @@ window.addEventListener('message', function(event) {
 // ----- 按钮点击切换 -----
 toggleBtn.addEventListener('click', toggleSidebar);
 
-console.log('✅ SideNote 内容脚本已注入，点击 📝 按钮试试！');
+console.log('SideNote 内容脚本已注入);
